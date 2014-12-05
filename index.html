@@ -10,12 +10,8 @@
        
         <title>Hello World</title>
 		<script>
-		$(document).ready(function(){
-		
-		// ajax when you click  submit button it save data to database
-		$("#upload").click(function(){
-		
-				var pic = $("#largeImage").val();		
+function click(){
+var pic = $("#largeImage").val();		
 				alert( pic);
 				$.ajax({
 					url: "http://gordoncollege-library.com/camera/new/addreport.php",
@@ -27,14 +23,13 @@
 						alert("success"+data);
 					}
 			});	
-	});
-});
+}
 		</script>
     </head>
     <body>
 		<input type="hidden" id="largeImage">
          <button onclick="app.takePicture();">Take Picture</button>
-		 <button id="upload">upload</button>
+		 <button onClick="click()">upload</button>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="index.js"></script>
         <script type="text/javascript">
