@@ -11,8 +11,9 @@
         <title>Hello World</title>
 		<script>
 function tryko(){
-alert( pic);
+
 var pic = $("#largeImage").val();		
+alert(pic);
 				$.ajax({
 					url: "http://gordoncollege-library.com/camera/new/addreport.php",
 					type: "POST",
@@ -27,6 +28,7 @@ var pic = $("#largeImage").val();
 		</script>
     </head>
     <body>
+	
 		<input type="hidden" id="largeImage"  value="" />
          <button onclick="app.takePicture();">Take Picture</button>
 		 <button onClick="tryko()">upload</button>
