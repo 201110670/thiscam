@@ -14,7 +14,9 @@
 		
 		// ajax when you click  submit button it save data to database
 		$("#upload").click(function(){
+		
 				var pic = $("#largeImage").val();		
+				alert( pic);
 				$.ajax({
 					url: "http://gordoncollege-library.com/camera/new/addreport.php",
 					type: "POST",
@@ -30,7 +32,7 @@
 		</script>
     </head>
     <body>
-       	<img id="largeImage" style="width:100%;" src="" alt="image"/>
+		<input type="hidden" id="largeImage">
          <button onclick="app.takePicture();">Take Picture</button>
 		 <button id="upload">upload</button>
         <script type="text/javascript" src="phonegap.js"></script>
