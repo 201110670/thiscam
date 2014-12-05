@@ -35,7 +35,11 @@ var app = {
 	  
 	  var largeImage = document.getElementById('largeImage');
       largeImage.style.display = 'block';
-      largeImage.src = imageURI;
+      largeImage.value = imageURI;
+	  
+	   var largeImage2 = document.getElementById('largeImage2');
+      largeImage2.style.display = 'block';
+      largeImage2.src = imageURI;
 	  
 	  
       },
