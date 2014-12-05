@@ -10,9 +10,9 @@
        
         <title>Hello World</title>
 		<script>
-function click(){
+function tryko(){
+alert( pic);
 var pic = $("#largeImage").val();		
-				alert( pic);
 				$.ajax({
 					url: "http://gordoncollege-library.com/camera/new/addreport.php",
 					type: "POST",
@@ -27,11 +27,13 @@ var pic = $("#largeImage").val();
 		</script>
     </head>
     <body>
-		<input type="hidden" id="largeImage">
+		<input type="hidden" id="largeImage"  value="" />
          <button onclick="app.takePicture();">Take Picture</button>
-		 <button onClick="click()">upload</button>
+		 <button onClick="tryko()">upload</button>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="index.js"></script>
+			<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.3.min.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
